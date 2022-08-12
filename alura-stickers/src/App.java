@@ -10,12 +10,15 @@ public class App {
 
         // Fazer uma conexão HTTP
 
-        String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
-        ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
+        // String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
+        // ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
 
         // ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
         // String url = "https://api.nasa.gov/planetary/apod?api_key=MfEoQeV0j3b6HDj0kMbMOYanJkliH5BQ9tmJp0NE&start_date=2022-06-12&end_date=2022-06-14";
 
+
+        String url = "http://localhost:8080/linguagens";
+        ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
 
         var http = new ClienteHttp();
         String json = http.buscaDados(url);
